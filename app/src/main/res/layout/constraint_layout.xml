@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/birth_day"
+        android:layout_width="257dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:hint="Birthday"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/firstNameLabel8"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameLabel8" />
+
+    <TextView
+        android:id="@+id/firstNameLabel8"
+        android:layout_width="256dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="16dp"
+        android:text="Birthday"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/birth_day"
+        app:layout_constraintTop_toBottomOf="@+id/gender" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="Email"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameLabel5" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="379dp"
+        android:layout_height="76dp"
+        android:layout_marginTop="4dp"
+        android:hint="Address"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="@+id/firstNameLabel7"
+        app:layout_constraintStart_toStartOf="@+id/firstNameLabel7"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameLabel7" />
+
+    <TextView
+        android:id="@+id/firstNameLabel7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Address"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/birth_day" />
+
+    <TextView
+        android:id="@+id/firstNameLabel5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Email"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/address" />
+
+    <TextView
+        android:id="@+id/firstNameLabel"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:text="@string/first_name"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@+id/first_name"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lastNameLabel"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="@string/last_name"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/firstNameLabel"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/first_name"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="First Name"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameLabel" />
+
+    <EditText
+        android:id="@+id/last_name"
+        android:layout_width="174dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:hint="Last Name"
+        android:minHeight="48dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/lastNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/lastNameLabel" />
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="241dp"
+        android:layout_height="84dp"
+        android:layout_marginStart="36dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@+id/textView8"
+        app:layout_constraintStart_toEndOf="@+id/textView8"
+        app:layout_constraintTop_toTopOf="@+id/textView8"
+        app:layout_constraintVertical_bias="0.456">
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="112dp"
+            android:layout_height="match_parent"
+            android:text="Male" />
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="129dp"
+            android:layout_height="84dp"
+            android:text="Female" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Gender"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_name" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="97dp"
+        android:layout_height="48dp"
+        android:text="Select"
+        app:layout_constraintBottom_toBottomOf="@+id/birth_day"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/birth_day" />
+
+    <CheckBox
+        android:id="@+id/agree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="I agree to Term of Use"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email" />
+
+    <Button
+        android:id="@+id/register"
+        android:layout_width="224dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="32dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/agree" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
